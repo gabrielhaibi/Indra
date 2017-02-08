@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 public class ExFutebol {
 	public static void main(String[] args) {
 
-		float altura = 0;
+		float altura = 0.0;
 		float peso = 0;
 		float alturaMedia = 0;
 		double porcentagemMais80kg = 0;
@@ -19,11 +19,11 @@ public class ExFutebol {
 			idadeMedia = 0;
 			for (j = 0; j < 11; j++) {
 				idade = Integer.parseInt(JOptionPane
-						.showInputDialog("Insira a idade do " + (j + 1) + "º jogador do time " + (i + 1) + ":"));
+						.showInputDialog("Insira a idade do " + (j + 1) + "Âº jogador do time " + (i + 1) + ":"));
 				altura = Integer.parseInt(JOptionPane
-						.showInputDialog("Insira a altura (m) do " + (j + 1) + "º jogador do time " + (i + 1) + ":"));
+						.showInputDialog("Insira a altura (m) do " + (j + 1) + "Âº jogador do time " + (i + 1) + ":"));
 				peso = Integer.parseInt(JOptionPane
-						.showInputDialog("Insira o peso (kg) do " + (j + 1) + "º jogador do time " + (i + 1) + ":"));
+						.showInputDialog("Insira o peso (kg) do " + (j + 1) + "Âº jogador do time " + (i + 1) + ":"));
 				idadeMedia = idadeMedia + idade;
 				alturaMedia = alturaMedia + altura;
 				if (idade < 18) {
@@ -35,16 +35,16 @@ public class ExFutebol {
 			}
 			idadeMedia = (idadeMedia / 11);
 			JOptionPane.showMessageDialog(null,
-					"A idade media dos jogadores do time " + (i + 1) + " é de: " + idadeMedia + " anos.");
+					"A idade media dos jogadores do time " + (i + 1) + " Ã© de: " + idadeMedia + " anos.");
 		}
 		alturaMedia = (alturaMedia / 55);
 		JOptionPane.showMessageDialog(null,
-				"A altura media de todos os jogadores do campeonato é de: " + alturaMedia + "m.");
+				"A altura media de todos os jogadores do campeonato Ã© de: " + alturaMedia + "m.");
 
-		JOptionPane.showMessageDialog(null, "O número de jogadores com menos de 18 anos é de: " + ate18 + ".");
+		JOptionPane.showMessageDialog(null, "O nÃºmero de jogadores com menos de 18 anos Ã© de: " + ate18 + ".");
 
 		porcentagemMais80kg = ((100.0 * mais80kg) / 55);
 		JOptionPane.showMessageDialog(null,
-				"A porcentagem de todos jogadores do campeonato com mais de 80Kg é de: " + porcentagemMais80kg + "%.");
+				"A porcentagem de todos jogadores do campeonato com mais de 80Kg Ã© de: " + porcentagemMais80kg + "%.");
 	}
 }
